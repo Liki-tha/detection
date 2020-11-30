@@ -77,6 +77,9 @@ function setup() {
   objectDetector = ml5.objectDetector('cocossd', modelLoaded);
   document.getElementById("status").innerHTML = "Status : Detecting Objects";
 }
+	function draw(){
+    image(img,0,0,640,420);
+}
 
 function modelLoaded() {
   console.log("Model Loaded!")
